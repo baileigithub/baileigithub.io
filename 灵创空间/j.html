@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>灵创空间</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index1.css">
+</head>
+<body>
+    <!--三个区域，header顶部栏，main中间栏给介绍什么的，外加个时间显示，底部写加入灵创，一些好处甚么的-->
+    <div class="header">
+        <div class="wrapper">
+            <img src="./图片/hrb.png" alt="哈理工荣成" />
+            <p>灵创空间</p>
+        </div>
+    </div>
+    <div class="ele">
+        <div><a href="./主页.html">田军作</a></div>
+        <div><a href="./h.html">韩鲁宁作</a></div>
+        <div><a href="./s.html">孙家栋作</a></div>
+        <div><a href="./j.html">姬冠宇作</a></div>
+        
+    </div>
+    <br />
+    <div class="countdown">
+        <p class="next">现在是2024年8月19日</p>
+        <p class="clock">
+            <span id="hour">00</span>
+            <i>:</i>
+            <span id="minutes">25</span>
+            <i>:</i>
+            <span id="scond">20</span>
+        </p>
+        <p class="next">欢迎来到灵创空间宣传页</p>
+
+    </div>
+    <br />
+    <div class="chunck">
+
+        <div class="wrapper">
+            <p>实验室简介</p>
+            <div class="text">
+                灵创空间隶属于哈尔滨理工大学荣成校区软件工程系，以提高学生能力、促进教学发展、辅助科学研究为定位，多途径地对学生实践动手能力、创新能力和个性化发展进行培养。
+                <br />
+                实验室研究方向涵盖大数据及数据挖掘，人工智能，机器学习，深度学习等。目前，灵创空间形成了学院负责、实验室组织管理、教师指导、学生参与的良好运行机制，每个环节除了学生的自我管理，都有相应的人员给予指导和帮助，确保创新实践活动顺利高质量完成。更是在指导老师毕蓉蓉的带领下取得了傲人的成绩。
+                <br />
+                其中包括承办多次“蓝桥杯”全国软件专业人才设计与创业大赛，并荣获国家级三等奖、省级奖项若干;独立完成省级指导大学生创新创业项目;积极与其他实验室开展深度而又广泛的交流等。
+                <br />从创立之初就始终走在学院创新科技的前沿，同时也代表了学校的前沿技术，受到了广泛师生的一致好评。
+                <br />
+                灵创空间以行动体现心动，深入践行大学生创新创业的新途径新方式，让一系列的创新行为得以传承和发扬.展示了新时代大学生创新创业的成效和风采。
+            </div>
+            <p>小组学习简述</p>
+            <div class="text">
+                目前实验室主要分为几个学习方向，并以此分了小组进行学习，分别是
+                <ul>
+
+                    <li name="深度学习">
+                        <a href="#">深度学习组</a>
+                        <div>
+                            由毕蓉蓉老师带领
+                            <br />
+                            深度学习，主要研究计算机视觉即图像处理方面，重点研究医学影像处理方向的内容。
+                            <br />
+                            侧重研究深度学习网络架构的设计与实现。
+                        </div>
+                    </li>
+                    <li name="项目开发">
+                        <a href="#">项目开发组</a><div>
+                            由董建豪学长带领
+                            <br />
+                            项目开发，主要学习HTML，CSS，JavaScript和Vue等web网页开发
+                            <br />实现微信小程序开发和其他一些程序设计
+                            <br />
+                            一周会开一次会议，开学后线下
+                        </div>
+                    </li>
+                    <li name="游戏开发">
+                        <a href="#">游戏开发组</a> <div>
+                            由王祖恒学长带领
+                            <br />
+                            主要以c#语言为基础，学习unity引擎的游戏开发，制作肉鸽2d横板游戏
+                            <br />一周一次会议或者简单qq讨论组发个言
+                        </div>
+                    </li>
+                </ul>
+                (点击对应项可展开查看各组大致学习相关)
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="wrapper">
+            <br />
+            <br />
+            <p>如果你感兴趣的话，点此<button>加入我们</button><br />灵创空间等待你的加入！</p>
+        </div>
+    </div>
+    <script>
+        const deeplearn = document.querySelector('[name=深度学习] div');
+        deeplearn.parentElement.addEventListener('click', function () {
+            if (deeplearn.style.display != 'block')
+                deeplearn.style.display = 'block';
+            else
+                deeplearn.style.display = 'none';
+        })
+        const gamecreate = document.querySelector('[name=游戏开发] div');
+        gamecreate.parentElement.addEventListener('click', function () {
+            if (gamecreate.style.display != 'block')
+                gamecreate.style.display = 'block';
+            else
+                gamecreate.style.display = 'none';
+        })
+        const project = document.querySelector('[name=项目开发] div');
+        project.parentElement.addEventListener('click', function () {
+            if (project.style.display != 'block')
+                project.style.display = 'block';
+            else
+                project.style.display = 'none';
+        })
+
+        // 随机颜色函数
+        // 1. 自定义一个随机颜色函数
+        function getRandomColor(flag = true) {
+            if (flag) {
+                // 3. 如果是true 则返回 #ffffff
+                let str = '#'
+                let arr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f']
+                // 利用for循环随机抽6次 累加到 str里面
+                for (let i = 1; i <= 6; i++) {
+                    // 每次要随机从数组里面抽取一个
+                    // random 是数组的索引号 是随机的
+                    let random = Math.floor(Math.random() * arr.length)
+                    // str = str + arr[random]
+                    str += arr[random]
+                }
+                return str
+
+            } else {
+                // 4. 否则是 false 则返回 rgb(255,255,255)
+                let r = Math.floor(Math.random() * 256)  // 55
+                let g = Math.floor(Math.random() * 256)  // 89
+                let b = Math.floor(Math.random() * 256)  // 255
+                return `rgb(${r},${g},${b})`
+            }
+        }
+        // 页面刷新随机得到颜色
+        const countdown = document.querySelector('.countdown')
+        countdown.style.backgroundColor = getRandomColor()
+        function getCountTime() {
+            const now = +new Date()
+            const nowtime = new Date();
+            const count = now / 1000
+            let h = nowtime.getHours();
+            h = h < 10 ? '0' + h : h;
+            let m = parseInt(count / 60 % 60)
+            m = m < 10 ? '0' + m : m
+            let s = parseInt(count % 60)
+            s = s < 10 ? '0' + s : s
+            document.querySelector('#hour').innerHTML = h
+            document.querySelector('#minutes').innerHTML = m
+            document.querySelector('#scond').innerHTML = s
+        }
+        //上面的部分
+        const text = document.querySelector('.next');
+        const date = new Date();
+        text.innerHTML = `现在是${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`
+
+        // 先调用一次
+        getCountTime()
+
+        // 开启定时器
+        setInterval(getCountTime, 1000)
+    </script>
+</body>
+</html>

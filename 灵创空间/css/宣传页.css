@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f3f5f7;
+  height: 3000px;
+}
+.head{
+  height:120px;
+  margin:auto;
+}
+.w{
+  width: 1200px;
+  margin:auto;
+}
+.logo{
+  float: left;
+  height: 120px;
+}
+
+.ele {
+  position: fixed;
+  width: 100px;
+  height: 400px;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  align-items: center; 
+  font-size: 30px;
+    font-family: 'Bad Script' ,cursive;
+    overflow: auto;
+}
+.ele > div {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  display: flex; 
+  cursor: pointer;
+  justify-content: center; 
+  align-items: center; 
+  
+  transition: background-color 0.3s ease;
+}
+.ele > div:hover {
+  background-color: #00b3ff;
+}
+.ele>div>a{
+  text-decoration: none;
+}
+.logo img{
+  height: 120px;
+}
+.huanying{
+  float: left;
+  height: 120px;
+  width: 799px;
+  background-color: #fff;
+}
+.huanying h2{
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  font-size: 40px;
+  font-family: "宋体";
+}
+.bd1{
+  height: 700px;
+  background-image: url(../图片/11.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.bd2{
+  height: 700px;
+  background-color: rgba(139, 44, 44, 0.2);
+  background-image: url(../图片/22.jpg);
+}
+.bd3{
+  height: 700px;
+  background-color: rgba(40, 47, 128, 0.2);
+  background-image: url(../图片/33.jpg);
+}
+.bd1 .box1{
+  float: left;
+  margin-left: 300px;
+  margin-top: 250px;
+  width: 600px;
+}
+.bd2 .box2{
+  float: left;
+  margin-left: 300px;
+  width: 600px;
+}
+.bd3 .box3{
+  float: left;
+  margin-left: 300px;
+  margin-top: 225px;
+  width: 600px;
+}
+.bd1 h2{
+  text-align: center;
+  font-size: 25px;
+  line-height: 50px;
+  padding-top: 60px;
+}
+.bd2 h2{
+  text-align: center;
+  font-size: 25px;
+  line-height: 50px;
+  padding-top: 60px;
+}
+.bd3 h2{
+  text-align: center;
+  font-size: 25px;
+  line-height: 50px;
+  padding-top: 60px;
+}

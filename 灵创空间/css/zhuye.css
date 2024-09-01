@@ -1,0 +1,588 @@
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  .ele {
+    position: fixed;
+    width: 100px;
+    height: 400px;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+    font-size: 30px;
+}
+.ele > div {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex; 
+    cursor: pointer;
+    justify-content: center; 
+    align-items: center; 
+    
+    transition: background-color 0.3s ease;
+}
+.ele > div:hover {
+    background-color: #00b3ff;
+}
+.ele>div>a{
+    text-decoration: none;
+}
+.liuxing{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    animation:animateBg 50s linear infinite;
+}
+@keyframes animateBg{
+    0%,100%{
+        transition: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+.liuxing span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 8px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(255, 255, 255, 1);
+    animation: animate1 3s linear infinite;
+}
+.liuxing span::before{
+    content: '';
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 300px;
+    height: 1px;
+    background:linear-gradient(90deg,#fff,transparent);
+}
+@keyframes animate1{
+    0%{
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+.liuxing span:nth-child(1){
+    top: 0px;
+    right: 0px;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration:1s ;
+}
+.liuxing span:nth-child(2){
+    top: 0px;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration:3s ;
+}
+.liuxing span:nth-child(3){
+    top: 80px;
+    right: 0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration:2s ;
+}
+.liuxing span:nth-child(4){
+    top: 0px;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration:1.5s;
+}
+.liuxing span:nth-child(5){
+    top: 0px;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration:2.5s;
+}
+.liuxing span:nth-child(6){
+    top: 0px;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration:3s;
+}
+.liuxing span:nth-child(7){
+    top: 300px;
+    right: 0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration:1.75s;
+}
+.liuxing span:nth-child(8){
+    top: 0px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration:1.25s;
+}
+.liuxing span:nth-child(9){
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration:2.25s;
+}
+.liuxing span:nth-child(10){
+    top: 0px;
+    right: 450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration:2.25s;
+}
+
+
+body{
+    font-family: 'Bad Script' ,cursive;
+    overflow: auto;
+}
+.top{
+    overflow: hidden;
+    position: relative;
+    background: url(../图片/背景1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aqua;
+    width: 100%;
+    height: 800px;
+}
+.top .lingchuang{
+    display: block;
+    /* background-color: red; */
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    font-size: 200px;
+    top: 33%;
+    left: 65%;
+    color: cyan;
+    font-family: 'Bad Script' ,cursive;
+    text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 300px #00b3ff,
+        0 0 400px #00b3ff;
+}
+.top .kongjian{
+    display: block;
+    position: absolute;
+    /* background-color: white; */
+    width: 200px;
+    height: 400px;
+    font-size: 150px;
+    right:  5%;
+    color: cyan;
+    top: 50%;
+    text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 300px #00b3ff,
+        0 0 400px #00b3ff;
+}
+.top .kaichang{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 600px;
+    height: 700px;
+    /* background-color: white; */
+
+}
+.top .kaichang ul li{
+    color: cornsilk;
+    height: 60px;
+    line-height: 60px;
+    font-size: 35px;
+    font-weight: 500;
+    animation: fadeIn 2s ease-out forwards;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.top2{
+    position: relative;
+    background-color: #043b4c;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    font-size: 100px;
+}
+.top2 span{
+    font-family: 仿宋;
+    /* font-family: 字由文艺黑; */
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    animation: ani 1s ease-in-out infinite;
+    animation-delay: calc(0.1s*var(--i));
+    text-shadow: 2px 5px 10px 1px white;
+    
+}
+@keyframes ani{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+    40%,100%{
+        transform: translateY(0px);
+    }
+}
+.top3{
+    height: 2000px;
+    width: 100%;
+    background: #ff914d;
+    padding: 4% 2%;
+}
+.top3 .neirong{
+    position: flex;
+    border-radius: 5%;
+    display: block;
+    height: 98%;
+    width: 98%;
+    /* margin:  100px 20px; */
+    background: #e7dec4;
+    /* background: #fffaef; */
+    flex-direction: column;
+    /* 修改主轴方向,垂直方向 */
+    justify-content: center;
+}
+.top3 .neirong .banner1{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* background: red; */
+    font-family: cursive;
+}
+.top3 .neirong .banner1 .a{
+    top: 10%;
+    left: 13%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    background: #000;
+    position: absolute;
+    background: url(../图片/屏幕截图\ 2024-08-23\ 001312.png);
+    background-repeat: no-repeat;
+     box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.5);
+}
+
+.top3 .neirong .banner1 .a2{
+    position: absolute;
+    display: block;
+    top: 55%;
+    left: 10%;
+    width: 400px;
+    height: 130px;
+    font-size: 70px;
+    /* background: white; */
+    /* text-align: center; */
+    line-height: 150px;
+    /* background: #ffe69f; */
+    /* box-shadow: 2px 5px 10px/ 1px rgba(0,0,0,0.5); */
+}
+
+
+.top3 .neirong .banner1 .a3 .a4{
+    border-radius:2% ;
+    padding: 30px;
+    position: absolute;
+    display: block;
+    top: 10%;
+    right:  10%;
+    width: 650px;
+    height: 330px;
+    font-size: 25px;
+    background: #ffe69f;
+    box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.5);
+    transition:all 1s;
+}
+.top3 .neirong .banner1 .a3 .a4:hover{
+    transform: translateY(3%);
+    transform: translateX(-3%);
+}
+
+
+.top3 .neirong .banner2{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    /* background: pink; */
+}
+.top3 .neirong .banner2 .b1{
+    padding-top:40px ;
+    width: 10%;
+    height: 500px;
+    display: block;
+    font-size: 80px;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    background-color: #0c8eb5;
+    box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.5);
+}
+.top3 .neirong .banner2 .b1 li {
+    animation-duration: 3s;
+    animation-name: slidein2;
+  }
+  
+@keyframes slidein2 {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+.top3 .neirong .banner2 .b1 li{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+.top3 .neirong .banner2 .b2{
+    position: absolute;
+    padding: 3%;
+    width: 70%;
+    top: 8%;
+    left: 5%;
+    height: 85%;
+    background: orange;
+    box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.5);
+    border-radius: 5%;
+    font-size: 25px;
+    transition: all 2s;
+}
+.top3 .neirong .banner2 .b2:hover{
+    transform: translateY(5%);
+    /* transform: translateX(3%); */
+}
+
+.top3 .neirong .banner3{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    /* background: blue; */
+}
+.top3 .neirong .banner3 .c1{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 30%;
+    height: 70%;
+    border-radius: 50%;
+    box-shadow: 2px 5px 10px 1px rgba(0, 0,0, 0.5);
+    background: #455de7;
+    font-size: 70px;
+    line-height: 140px;
+    text-align: center;
+}
+.top3 .neirong .banner3 .c1:hover{
+    text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 300px #00b3ff,
+        0 0 400px #00b3ff;
+}
+.top3 .neirong .banner3 .c2{
+    position: absolute;
+    /* background: #000; */
+    background: url(../图片/屏幕截图\ 2024-08-23\ 011805_副本.png);
+    background-repeat: no-repeat;
+    border-radius: 5%;
+    width: 256px;
+    height: 180px;
+    left: 65%;
+    box-shadow: 2px 5px 10px 1px rgba(0, 0,0, 0.5);
+    transition: all 2s;
+}
+.top3 .neirong .banner3 .c2:hover{
+    transform: translateX(50%);
+    /* transform: translateX(3%); */
+}
+.top3 .neirong .banner4{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    /* background: orange; */
+    justify-content: center;
+}
+.top3 .banner4 .d1{
+    position: relative;
+    display: block;
+    width: 50%;
+    height: 100%;
+    /* background: blue; */
+}
+.top3 .banner4 .d2{
+    position: relative;
+    display: block;
+    width: 50%;
+    height: 100%;
+    /* background: white; */
+}
+.top3 .banner4 .d1 .x1{
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #1398c1;
+    top: 10%;
+    left: 10%;
+    line-height: 200px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 2px 5px 10px 1px rgba(0, 0,0, 0.5);
+}
+.top3 .banner4 .d2 .x2{
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #1398c1;
+    top: 10%;
+    left: 10%;
+    line-height: 200px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 2px 5px 10px 1px rgba(0, 0,0, 0.5);
+}
+.top3 .banner4 .d1 .y1{
+    position: absolute;
+    width: 210px;
+    height: 230px;
+    border-radius: 10%;
+    background: url(../图片/微信图片_20240823020046_副本.jpg);
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 10%;
+    box-shadow: 2px 5px 10px 1px rgba(0, 0,0, 0.5);
+}
+.top3 .banner4 .d2 .y2{
+    position: absolute;
+    width: 210px;
+    height: 230px;
+    border-radius: 10%;
+    background: url(../图片/微信图片_20240823020059_副本.jpg);
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 10%;
+    box-shadow: 2px 5px 10px 1px rgba(0, 0,0, 0.5);
+}
+.top3 .banner4 .d1 .z1{
+    padding-top:10% ;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    /* background: white; */
+    width: 50%;
+    height: 80%;
+}
+.top3 .banner4 .d2 .z2{
+    padding-top: 10%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    /* background: white; */
+    width: 50%;
+    height: 80%;
+}
+.top3 .banner4 .d2 .z2 ul li{
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px;
+}
+.top3 .banner4 .d1 .z1 ul li{
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px;
+}
+.top4{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #043b4c;
+}
+.top4 .a1{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    top: 5%;
+    /* background: #000; */
+    font-size: 80px;
+    text-align: center;
+    line-height: 200px;
+    left: 5%;
+    color: #ff914d;
+}
+.top4 .a2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    top: 55%;
+    /* background: #000; */
+    font-size: 80px;
+    text-align: center;
+    line-height: 200px;
+    left: 5%;
+    color: #ff914d;
+}
+

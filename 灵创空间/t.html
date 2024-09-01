@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <section class="liuxing">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+    <div class="top">
+        <h1> 
+            <span>欢</span>
+            <span>迎</span>
+            <span>来</span>
+            <span>到</span>
+            <span>灵</span>
+            <span>创</span>
+            <span>空</span>
+            <span>间</span>
+        </h1>
+    </div>
+    <div class="zhongjian">
+        <div class="left">
+            <ul>
+                
+            </ul>
+       </div>
+        <div class="right">
+        <div class="join">Now!</div>
+        <div class="join">Join Us</div>
+         </div>
+         
+    </div>
+    <script>
+        const arr=['你是否还在为未来感到担忧？','你是否对前景感到迷茫？','你又是否还在担心毕业即是失业？',
+            '如果你有这些担忧，','那么就请加入到我们当中，','灵创空间，','给你这些问题的最有用答案，','解决你的困惑!'
+        ]
+        const ul=document.querySelector('.zhongjian .left ul')
+        // for(let i=0;i<arr.length;i++){
+        //     const li=document.createElement('li')
+        //     li.innerHTML=  `<li>${arr[i]}</li>`
+        //     ul.appendChild(li)
+        // }
+        let i=0
+        let x=setInterval(function(){
+            if(i>=arr.length-1){
+                clearInterval(x);
+            }
+            const li=document.createElement('li')
+            li.innerHTML=  `<li>${arr[i]}</li>`
+            ul.appendChild(li)
+            i++
+        },500)
+        const div=document.querySelector('.right')
+        console.log(div)
+        div.addEventListener('click',function(){
+            window.location.href = './主页.html';
+        })
+    </script>
+</body>
+</html>

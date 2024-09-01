@@ -1,0 +1,23 @@
+
+
+.text{
+  font-size: 18px;
+  font-weight: 900;
+  color: aliceblue;
+  /* 字间距 */
+  letter-spacing: 10px;
+  /* 设置旋转角度和倾斜角度 */
+  transform: rotate(-0deg) skew(0deg);
+  /* 字体阴影(立体厚度) */
+  text-shadow: -1px 1px 0 darkgray,
+  -2px 2px 0 darkgray,
+  -3px 3px 0 darkgray,
+  -4px 4px 0 darkgray
+
+
+
+  ;
+}
+.text p{
+  outline: none;
+}
